@@ -21,7 +21,7 @@ const Div = styled.div`
 
 const LogoContainer = styled.div`
   color: black;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 900;
 
   a {
@@ -43,7 +43,7 @@ const NavbarList = styled.ul`
       text-decoration: none;
       color: #7e7c7c;
       transition: all 0.2s ease-in-out;
-      font-size: .8rem;
+      font-size: .9rem;
 
       &:hover {
         color: black;

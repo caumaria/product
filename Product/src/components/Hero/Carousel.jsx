@@ -9,54 +9,58 @@ const imgs = [
 ];
 
 const Conteiner = styled.div`
-    
-
-    img:hover {
-        border: 2px solid hsl(26, 100%, 55%);
-    }
+  width: 50%;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Thumbnail = styled.img`
-    height: 260px;
-    width: 260px;
-    border-radius: 4%;
+  height: 366px;
+  width: 360px;
+  border-radius: 4%;
 `;
 
 const Div = styled.div`
-    justify-content: space-between;
+  img:hover {
+    border: 2px solid hsl(26, 100%, 55%);
+  }
 `;
 
 const Tiny = styled.img`
-    height: 60px;
-    width: 60px;
-    border-radius: 12%;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 12%;
+  margin-top: 1rem;
+  margin-right: 0.8rem;
 `;
 
 const Carousel = () => {
   const [sliderData, setSliderData] = useState(imgs[0]);
 
   const handleClick = (index) => {
-    console.log(index);
     const slider = imgs[index];
     setSliderData(slider);
   };
 
   return (
     <Conteiner>
+      <div>
+        <Thumbnail src={sliderData.value} />
 
-      <Thumbnail src={sliderData.value}/>
-
-      <Div>
-        {imgs.map((data, i) => (
-          <Tiny
-            src={data.value}
-            key={data.id}
-            onClick={() => handleClick(i)}
-            height="70"
-            width="100"
-          />
-        ))}
-      </Div>
+        <Div>
+          {imgs.map((data, i) => (
+            <Tiny
+              src={data.value}
+              key={data.id}
+              onClick={() => handleClick(i)}
+              height="70"
+              width="100"
+            />
+          ))}
+        </Div>
+      </div>
     </Conteiner>
   );
 };
