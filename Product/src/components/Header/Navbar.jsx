@@ -23,6 +23,11 @@ const LogoContainer = styled.div`
   color: black;
   font-size: 2rem;
   font-weight: 900;
+
+  a {
+    text-decoration: none;
+  }
+  
 `;
 
 const NavbarList = styled.ul`
@@ -36,11 +41,12 @@ const NavbarList = styled.ul`
 
     a {
       text-decoration: none;
-      color: #333;
+      color: #7e7c7c;
       transition: all 0.2s ease-in-out;
+      font-size: .8rem;
 
       &:hover {
-        color: #007bff;
+        color: black;
       }
     }
   }
@@ -86,6 +92,8 @@ const Icon = styled.div`
 
 const MenuIcon = styled.i`
   display: block;
+  margin-left: 8rem;
+  cursor: pointer;
 
   @media screen and (min-width: 760px) {
     display: none;
@@ -103,7 +111,9 @@ const Navbar = () => {
     <Div>
       <NavbarContainer>
         <Div>
-          <LogoContainer>sneakers</LogoContainer>
+          <LogoContainer>
+            <a>sneakers</a>
+          </LogoContainer>
 
           <NavbarList showMenu={showMenu}>
             <li>
@@ -135,10 +145,9 @@ const Navbar = () => {
                 src="image-avatar.png"
               />
             </Icon>
-
             <MenuIcon
-              className={showMenu ? "fas fa-times" : "fas fa-bars"}
-            ></MenuIcon>
+            className={showMenu ? "fas fa-times" : "fas fa-bars"}
+          ></MenuIcon>
           </IconContainer>
         </Div>
       </NavbarContainer>
