@@ -142,7 +142,7 @@ const Navbar = () => {
             <Icon>
               <img
                 style={{ width: "2.4rem", height: "2.4rem" }}
-                src="image-avatar.png"
+                src="/image-avatar.png"
               />
             </Icon>
             <MenuIcon
