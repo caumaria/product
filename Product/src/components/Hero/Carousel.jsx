@@ -14,6 +14,10 @@ const Conteiner = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 875px) {
+    width: 100%;
+  }
 `;
 
 const Thumbnail = styled.img`
@@ -25,6 +29,7 @@ const Thumbnail = styled.img`
 const Div = styled.div`
   img:hover {
     border: 2px solid hsl(26, 100%, 55%);
+    opacity: .4;
   }
 `;
 

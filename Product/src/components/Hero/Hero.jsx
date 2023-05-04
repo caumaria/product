@@ -15,6 +15,11 @@ const Div = styled.div`
   padding: 3rem;
   width: 66rem;
   gap: 2rem;
+  margin-top: 2rem;
+
+  @media screen and (max-width: 875px) {
+    display: block;
+  }
 `;
 
 

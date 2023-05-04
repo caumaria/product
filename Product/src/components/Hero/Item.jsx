@@ -9,6 +9,10 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 875px) {
+    width: 100%;
+  }
 `;
 
 const P = styled.p`
@@ -67,7 +71,7 @@ const Counter = styled.span`
 `;
 
 const AddRemove = styled.button`
-  margin-bottom: 6px;
+  margin: 0 6px 6px;
   padding: 0 0.5rem;
   border: none;
   background-color: transparent;
@@ -83,16 +87,21 @@ const AddCart = styled.button`
   padding: 14px 1px;
   color: white;
   font-weight: 700;
+  font-size: 1.1em;
   background-color: hsl(26, 100%, 55%);
   border-color: transparent;
   box-shadow: 0px 10px 5px hsl(25, 100%, 94%, 0.8);
   border-radius: 10px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Center = styled.div`
     display: flex;
     margin-top: 2rem;
+    gap: 1rem;
 `;
 
 const Item = () => {
@@ -115,7 +124,7 @@ const Item = () => {
         <h1>Fall Limited Edition Sneakers</h1>
         <About>
           These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole, they'll withstand everything
+          Featuring a durable rubber outer sole, they will withstand everything
           the weather can offer.
         </About>
 
@@ -135,7 +144,7 @@ const Item = () => {
 
           <AddCart>
             <BsCart3 size={20} />
-            Add to cart
+            <span>Add to cart</span> 
           </AddCart>
         </Center>
       </div>
