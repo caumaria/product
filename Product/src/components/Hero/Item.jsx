@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { BsCart3 } from "react-icons/Bs";
 import { useState } from "react";
 
 const Container = styled.div`
@@ -51,9 +50,9 @@ const Div = styled.div`
 `;
 
 const Discont = styled.p`
-    color: #a4a0a0;
-    text-decoration: line-through;
-    margin-top: 2px;
+  color: #a4a0a0;
+  text-decoration: line-through;
+  margin-top: 2px;
 `;
 
 const Btns = styled.div`
@@ -82,7 +81,6 @@ const AddRemove = styled.button`
 `;
 
 const AddCart = styled.button`
-  gap: 8px;
   width: 65%;
   padding: 14px 1px;
   color: white;
@@ -93,15 +91,12 @@ const AddCart = styled.button`
   box-shadow: 0px 10px 5px hsl(25, 100%, 94%, 0.8);
   border-radius: 10px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 const Center = styled.div`
-    display: flex;
-    margin-top: 2rem;
-    gap: 1rem;
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
 `;
 
 const Item = () => {
@@ -143,8 +138,7 @@ const Item = () => {
           </Btns>
 
           <AddCart>
-            <BsCart3 size={20} />
-            <span>Add to cart</span> 
+            <span>Add to cart</span>
           </AddCart>
         </Center>
       </div>

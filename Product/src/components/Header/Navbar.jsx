@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { BsCart3 } from "react-icons/Bs";
 
 const NavbarContainer = styled.nav`
   display: flex;
@@ -137,7 +136,9 @@ const Navbar = () => {
         <Div>
           <IconContainer showMenu={showMenu} onClick={toggleMenu}>
             <Icon>
-              <BsCart3 size={20} />
+              <img
+              style={{ width: "1.6em", height: "1.6em" }} 
+              src="/iconCart.png" alt="" />
             </Icon>
             <Icon>
               <img
