@@ -33,6 +33,7 @@ const NavbarList = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 
   li {
     list-style: none;

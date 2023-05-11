@@ -29,7 +29,7 @@ const Thumbnail = styled.img`
 const Div = styled.div`
   img:hover {
     border: 2px solid hsl(26, 100%, 55%);
-    opacity: .4;
+    opacity: 0.4;
   }
 `;
 
@@ -39,6 +39,11 @@ const Tiny = styled.img`
   border-radius: 12%;
   margin-top: 1rem;
   margin-right: 0.8rem;
+  @media screen and (max-width: 480px) {
+    height: 4.6rem;
+    width: 4.6rem;
+    margin-left: .2rem;
+  }
 `;
 
 const Carousel = () => {
