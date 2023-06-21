@@ -1,7 +1,6 @@
 # product
 Landing page for product
 <br>
-Inicially I've built the same product page, but i did using react components, so I felt that I didnt learn much. So here it is the same project in 'my own words',
 <br>
 Tech: REACT JS, JAVASCRIPT, STYLED COMPONENTS and HTML.
 <br>
